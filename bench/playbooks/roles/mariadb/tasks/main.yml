@@ -10,8 +10,8 @@
 
 - name: Add configuration
   template:
-    src: '{{ mysql_conf_tpl }}'
-    dest: '{{ mysql_conf_dir[ansible_distribution] }}/{{ mysql_conf_file }}'
+    src: "{{ mysql_conf_tpl }}"
+    dest: "{{ mysql_conf_dir[ansible_distribution] }}/{{ mysql_conf_file }}"
     owner: root
     group: root
     mode: 0644
@@ -23,8 +23,8 @@
 
 - name: Add configuration
   template:
-    src: '{{ mysql_conf_tpl }}'
-    dest: '{{ mysql_conf_dir[ansible_distribution] }}/{{ mysql_conf_file }}'
+    src: "{{ mysql_conf_tpl }}"
+    dest: "{{ mysql_conf_dir[ansible_distribution] }}/{{ mysql_conf_file }}"
     owner: root
     group: root
     mode: 0644
@@ -72,5 +72,3 @@
 - debug:
     var: mysql_secure_installation
   when: mysql_secure_installation and mysql_root_password is defined
-
-...
