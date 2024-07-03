@@ -86,7 +86,7 @@ This script uses Docker with the [Frappe/ERPNext Docker Repository](https://gith
 Download the Easy Install script and execute it:
 
 ```sh
-$ wget https://raw.githubusercontent.com/frappe/bench/develop/easy-install.py
+$ wget https://github.com/frappe/bench/raw/easy-install.py
 $ python3 easy-install.py --prod --email your@email.tld
 ```
 
